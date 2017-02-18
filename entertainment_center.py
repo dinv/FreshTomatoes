@@ -2,7 +2,7 @@ from media import Movie, QueryHelper
 import fresh_tomatoes
 
 # movie input
-# strings are handled query values
+# strings are handled as query values
 # integers are handled as database ID
 movie_input = ['Power Rangers', 'Lego Batman', 'Room', 'The Babadook',
                'The Imitation Game', 'The Italian Job', 'Finding Dory',

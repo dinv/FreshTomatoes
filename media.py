@@ -9,9 +9,8 @@ tmdb.API_KEY = parser.get('TMDb API Key','key')
 class Movie():
     """
     This class provides a way to store movie related information.
-    It utilizes the tmdbsimple library, a wrapper for The Movie Database (TMDb) API v3
+    Utilizes the tmdbsimple library, a wrapper for The Movie Database (TMDb) API v3    
     """
-
     # obtain configuration info from TMDb to generate poster URLs
     conf = tmdb.Configuration()
     reponse = conf.info()
@@ -26,19 +25,32 @@ class Movie():
 
     def __init__(self, title):
         self.movie = tmdb.Movies(self.get_movie_id(title))
-        self.title = self.get_movie_title()
+        self.title = self.get_movie_title(title)
         self.poster_image_url = self.POSTER_SECURE_BASE_URL + \
             self.POSTER_SIZE + self.get_poster_path()
         self.trailer_youtube_url = self.YOUTUBE_BASE_URL + self.get_youtube_key()
 
     def get_movie_id(self, title):
-        '''Returns the movie ID for a given title query'''
-        reponse = self.search.movie(query=title)
-        return self.search.results[0]['id']
+        '''
+        Returns the movie ID for a given title query
+        If title is an ID itself, function simply returns title
+        '''
+        if type(title) is int:
+            return title
+        else:
+            reponse = self.search.movie(query=title)
+            return self.search.results[0]['id']
 
-    def get_movie_title(self):
-        '''Returns the movie title from the database for a given title query'''
-        return self.search.results[0]['title']
+    def get_movie_title(self,title):
+        '''
+        Returns the movie title from the database for a given title query
+        If title is an ID itself, function returns title from info()
+        '''
+        if type(title) is int:
+            response = self.movie.info()
+            return self.movie.title
+        else:
+            return self.search.results[0]['title']
 
     def get_youtube_key(self):
         '''Returns the YouTube key for the movie trailer'''
@@ -49,3 +61,15 @@ class Movie():
         '''Returns the poster path for the movie poster'''
         response = self.movie.images()
         return self.movie.posters[0]['file_path']
+        
+class QueryHelper():
+    '''
+    Utility class that prints titles and IDs for a given title query    
+    '''
+    search = tmdb.Search()
+    def __init__(self, title):
+        reponse = self.search.movie(query=title)
+        for each in self.search.results:
+            print(('\t '+str(each['title'])+' '+str(each['id'])))
+
+    

@@ -15,3 +15,17 @@ Created for the Full Stack Web Developer nanodegree program with Udacity
 1) Run ```entertainment_center.py```  
 2) Change which movies are listed by modifying the ```movie_input``` list in ```entertainment_center.py```   
 3) Rerun ```entertainment_center.py``` to see the changes reflected
+
+##QueryHelper
+By default, the first result of a query is used.  This can be problematic if  
+the desired movie is not the first result.  
+
+For example, if we wanted to query for 'The Lego Movie', the first result  
+returned is 'The Lego Batman Movie'.  
+
+This can be handled using the QueryHelper utility class, which can assist  
+users in manually verifying a movie ID.  This ID can then be used in place of a  
+string title in the ```movie_input``` variable.
+
+Run ```helper_example.py``` to see this illustrated.   
+Then, replace 'Lego Batman' with 137106 to see this reflected on the webpage.

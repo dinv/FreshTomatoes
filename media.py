@@ -1,6 +1,7 @@
 import tmdbsimple as tmdb
 from configparser import SafeConfigParser
 
+#grab TMDb API key from config.ini
 parser = SafeConfigParser()
 parser.read('config.ini')
 tmdb.API_KEY = parser.get('TMDb API Key','key')

@@ -6,9 +6,8 @@ This repository contains code for FreshTomatoes, a miniature project that genera
 1) Ensure that Python 3 is installed  
 2) Install the [tmdbsimple](https://github.com/celiao/tmdbsimple) library  
 4) Install the configparser library  
-6) [Sign up](https://www.themoviedb.org/account/signup) with The Movie Database, and retrieve an API key
+6) [Sign up](https://www.themoviedb.org/account/signup) with The Movie Database, and retrieve an API key  
 5) Rename ```config.ini.example``` to ```config.ini```  
-
 6) Place your API key into ```config.ini```  
 
 ##Usage

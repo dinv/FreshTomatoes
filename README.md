@@ -2,12 +2,12 @@
 This repository contains code for FreshTomatoes, a miniature project that generates a webpage with movie titles, posters, and trailers. This was created for the Udacity Full Stack Web Developer nanodegree program
 
 ##Setup
-1) install Python 3 \n
-2) install the tmdbsimple library \n
+1) install Python 3__
+2) install the tmdbsimple library __
     ```
     pip install tmdbsimple
-    ```
-3) install the configparser library
+    ```__
+3) install the configparser library__
     ```
     pip install configparser
-    ```
+    ```__

@@ -4,10 +4,14 @@ This repository contains code for FreshTomatoes, a miniature project that genera
 ##Setup
 1) install Python 3
 
-2) install the tmdbsimple library 
+2) install the tmdbsimple library
+ 
     ```
     pip install tmdbsimple
+    ```
     
 3) install the configparser library
+
     ```
     pip install configparser
+    ```

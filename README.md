@@ -8,8 +8,9 @@ This repository contains code for FreshTomatoes, a miniature project that genera
 4) Install the configparser library  
 6) [Sign up](https://www.themoviedb.org/account/signup) with The Movie Database, and retrieve an API key
 5) Rename ```config.ini.example``` to ```config.ini```  
+
 6) Place your API key into ```config.ini```  
 
 ##Usage
-Simply run ```entertainment_center.py```  
-To change which movies are listed, simply modify the ```movie_input``` list in ```entertainment_center.py``` 
+1) Run ```entertainment_center.py```  
+2) Change which movies are listed by modifying the ```movie_input``` list in ```entertainment_center.py``` 

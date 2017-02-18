@@ -33,7 +33,7 @@ class Movie():
     def get_movie_id(self, title):
         '''
         Returns the movie ID for a given title query
-        If title is an ID itself, function simply returns title
+        If title is an ID itself, function simply returns the ID
         '''
         if type(title) is int:
             return title
@@ -61,15 +61,13 @@ class Movie():
         '''Returns the poster path for the movie poster'''
         response = self.movie.images()
         return self.movie.posters[0]['file_path']
-        
+
 class QueryHelper():
     '''
-    Utility class that prints titles and IDs for a given title query    
+    Utility class that prints titles and IDs for a given title query
     '''
     search = tmdb.Search()
     def __init__(self, title):
         reponse = self.search.movie(query=title)
         for each in self.search.results:
             print(('\t '+str(each['title'])+' '+str(each['id'])))
-
-    

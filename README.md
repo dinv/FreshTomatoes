@@ -13,5 +13,5 @@ Created for the Full Stack Web Developer nanodegree program with Udacity
 
 ##Usage
 1) Run ```entertainment_center.py```  
-2) Change which movies are listed by modifying the ```movie_input``` list in ```entertainment_center.py``` 
+2) Change which movies are listed by modifying the ```movie_input``` list in ```entertainment_center.py```   
 3) Rerun ```entertainment_center.py``` to see the changes reflected

@@ -23,7 +23,7 @@ By default, the first result of a query is used.  This can be problematic if the
 For example, if we wanted to query for 'The Lego Movie', the first result returned is 'The Lego Batman Movie'.  
 
 This can be handled using the QueryHelper utility class, which can assist users in manually verifying a movie ID.  
-The ID can then be used in place of a string title in the ```movie_input``` variable.  
+The ID can then be used in place of a string title in the ```movie_input``` list.  
 
 Run ```helper_example.py``` to see this illustrated.   
 Then, in ```entertainment_center.py```, replace 'Lego Batman' with 137106 to see this reflected on the webpage.

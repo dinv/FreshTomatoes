@@ -1,5 +1,5 @@
 # FreshTomatoes
-This repository contains code for FreshTomatoes, a miniature project that generates a webpage with movie titles, posters, and trailers.  
+FreshTomatoes is a miniature project that generates a webpage with movie titles, posters, and trailers.  
 Code is written using Python, and utilizes [The Movie Database (TMDb) API v3](https://www.themoviedb.org/documentation/api).  
 Created for the Full Stack Web Developer nanodegree program with Udacity.
 

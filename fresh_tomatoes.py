@@ -106,6 +106,8 @@ main_page_content = '''
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a href="#" class="navbar-left"><img style="max-height:50px;"
+                                            src="./tmdb.png"></a>
           </div>
         </div>
       </div>

@@ -18,6 +18,8 @@ Created for the Full Stack Web Developer nanodegree program with Udacity.
 3) Rerun ```entertainment_center.py``` to see the changes reflected
 
 ##File Descriptions
+###entertainment_center.py
+Takes in a movie list and utilizes a function calls from ```fresh_tomatoes.py``` 
 ###media.py
 Contains two classes: Movie() and QueryHelper()  
 ####Movie
@@ -35,3 +37,13 @@ The ID can then be used in place of a string title in the ```movie_input``` list
 
 Run ```helper_example.py``` to see this illustrated.   
 Then, in ```entertainment_center.py```, replace 'Lego Batman' with 137106 to see this reflected on the webpage.
+###fresh_tomatoes.py
+Contains two functions that create the HTML content and launch the webpage
+###helper_example.py
+Demonstrates how the QueryHelper object can be utilized.  
+###query_utility.py
+Utilizes QueryHelper object to print out query results (movie titles and IDs)
+###config.ini.example
+Example config file with dummy API key
+###tmdb.png
+Logo for TMDb

@@ -17,7 +17,15 @@ Created for the Full Stack Web Developer nanodegree program with Udacity.
 2) Change which movies are listed by modifying the ```movie_input``` list in ```entertainment_center.py```   
 3) Rerun ```entertainment_center.py``` to see the changes reflected
 
-##QueryHelper
+##File Descriptions
+###media.py
+Contains two classes: Movie() and QueryHelper()  
+####Movie
+This class provides a way to store movie related information.  
+Utilizes the tmdbsimple library, a wrapper for The Movie Database (TMDb) API v3  
+####QueryHelper
+ Utility class that prints titles and IDs for a given title query  
+#####Usage Note
 By default, the first result of a query is used.  This can be problematic if the desired movie is not the first result.  
 
 For example, if we wanted to query for 'The Lego Movie', the first result returned is 'The Lego Batman Movie'.  

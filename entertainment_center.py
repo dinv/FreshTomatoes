@@ -9,9 +9,7 @@ movie_input = ['Power Rangers', 'Lego Batman', 'Room', 'The Babadook',
                'Crazy Stupid Love', 'The Princess Bride']
 
 # generate list of movies
-movies = []
-for each in movie_input:
-    movies.append(Movie(each))
+movies = [Movie(i) for i in movie_input]
 
 # launch the fresh tomatoes webpage
 fresh_tomatoes.open_movies_page(movies)

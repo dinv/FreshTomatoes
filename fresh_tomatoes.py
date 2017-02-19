@@ -53,6 +53,19 @@ main_page_head = '''
             top: 0;
             background-color: white;
         }
+
+
+        nav.navbar.shrink {
+          min-height: 35px;
+        }        
+        
+        nav.navbar{
+          background-color:#ccc;
+           // Animation
+           -webkit-transition: all 0.4s ease;
+           transition: all 0.4s ease;
+        }
+
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -78,6 +91,15 @@ main_page_head = '''
             $(this).next("div").show("fast", showNext);
           });
         });
+        
+        $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+            $('nav').addClass('shrink');
+          } else {
+            $('nav').removeClass('shrink');
+          }
+        });        
+
     </script>
 </head>
 '''
@@ -100,18 +122,18 @@ main_page_content = '''
       </div>
     </div>
     
-    <!-- Main Page Content -->
     <div class="container">
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
-            <a href="#" class="navbar-left"><img style="max-height:50px;"
-                                            src="./tmdb.png"></a>
+            <a href="https://www.themoviedb.org" class="navbar-left"><img style="max-height:50px;"src="./tmdb.png"></a>
           </div>
         </div>
       </div>
     </div>
+        
+    <!-- Main Page Content -->
     <div class="container">
       {movie_tiles}
     </div>
